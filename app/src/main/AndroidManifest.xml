@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="android.dailyexpenses.unpas.dailyexpenses" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- spalsh screen -->
+        <activity
+            android:name=".SplashScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- main -->
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".PemasukanActivity"
+            android:label="Pemasukan"
+            android:parentActivityName=".HomeActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="android.dailyexpenses.unpas.dailyexpenses.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".TambahPemasukan"
+            android:label="Tambah Pemasukan"
+            android:parentActivityName=".PemasukanActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="android.dailyexpenses.unpas.dailyexpenses.PemasukanActivity" />
+        </activity>
+        <activity
+            android:name=".PengeluaranActivity"
+            android:label="Pengeluaran"
+            android:parentActivityName=".HomeActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="android.dailyexpenses.unpas.dailyexpenses.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".TambahPengeluaran"
+            android:label="Tambah Pengeluaran"
+            android:parentActivityName=".PengeluaranActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="android.dailyexpenses.unpas.dailyexpenses.PengeluaranActivity" />
+        </activity>
+        <activity
+            android:name=".Setting"
+            android:label="@string/title_activity_setting"
+            android:parentActivityName=".HomeActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="android.dailyexpenses.unpas.dailyexpenses.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".KategoriPemasukan"
+            android:label= "Kategori Pemasukan" >
+        </activity>
+    </application>
+
+</manifest>
