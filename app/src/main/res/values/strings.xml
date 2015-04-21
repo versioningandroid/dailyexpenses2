@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Daily expenses</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_pemasukan">PemasukanActivity</string>
+    <string name="title_activity_splash_screen">SplashScreen</string>
+    <string name="title_activity_tambah_pemasukan">TambahPemasukan</string>
+    <string name="title_activity_pengeluaran">PengeluaranActivity</string>
+    <string name="title_activity_tambah_pengeluaran">TambahPengeluaran</string>
+    <string name="title_activity_setting">Setting</string>
+    <string name="title_activity_kategori_pemasukan">KategoriPemasukan</string>
+</resources>

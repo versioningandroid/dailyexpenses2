@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context="android.dailyexpenses.unpas.dailyexpenses.PengeluaranActivity">
+
+    <TextView android:text="Total Pengeluaran" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="15dp"
+        android:id="@+id/totalPengeluaranId" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/angkaTotal"
+        android:layout_gravity="center_horizontal"
+        android:textSize="19dp"
+        android:textColor="#fffd7d5d" />
+
+    <Button
+        android:id="@+id/btnTambahPengeluaran"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Tambah"
+        android:textSize="15dp"
+        android:background="#ffff653f" />
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent">
+            <TableLayout
+                android:id="@+id/tabelPengeluaran"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"/>
+        </ScrollView>
+
+    </HorizontalScrollView>
+
+</LinearLayout>
+
